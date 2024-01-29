@@ -10,6 +10,6 @@ public class Main {
         int sa = sc.nextInt();
         char ss = sc.next().charAt(0);
 
-        System.out.print((fa>=19||sa>=19)&&(fs=='M'||ss=='M')?"1":"0");
+        System.out.print(((fa>=19&&fa<=100)||(sa>=19&&sa<=100))&&(fs=='M'||ss=='M')?"1":"0");
     }
 }
