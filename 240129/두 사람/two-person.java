@@ -1,15 +1,18 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
-        int fa = sc.nextInt();
-        char fs = sc.next().charAt(0);
-        int sa = sc.nextInt();
-        char ss = sc.next().charAt(0);
+        // 첫 번째 쌍 입력
+        int firstAge = sc.nextInt();
+        char firstGender = sc.next().charAt(0);
 
-        System.out.print(((fa>=19&&fa<=100)||(sa>=19&&sa<=100))&&(fs=='M'||ss=='M')?"1":"0");
+        // 두 번째 쌍 입력
+        int secondAge = sc.nextInt();
+        char secondGender = sc.next().charAt(0);
+
+        // 조건을 만족하는 경우 "1", 아닌 경우 "0" 출력
+        System.out.print((firstAge >= 19 || secondAge >= 19) && (firstGender == 'M' || secondGender == 'M') ? "1" : "0");
     }
 }
