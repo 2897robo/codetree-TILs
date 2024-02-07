@@ -5,9 +5,9 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
+        int y = sc.nextInt();
 
-        if ((a % 4 == 0) || (a%4==0 && a%100!=0) || (a % 4 == 0 && a%100 == 0 && a%400 == 0)) {
+        if ((y % 4 == 0) || (y%4==0 && y%100!=0) || (y % 4 == 0 && y%100 == 0 && y%400 == 0)) {
             System.out.println("true");
         }
         else {
