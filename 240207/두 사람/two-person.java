@@ -13,6 +13,6 @@ public class Main {
         String secondGender = sc.next();
 
         // 조건을 만족하는 경우 "1", 아닌 경우 "0" 출력
-        System.out.print((firstAge >= 19 || secondAge >= 19) && (firstGender.equals("M") || secondGender.equals("M")) ? "1" : "0");
+        System.out.print((firstAge >= 19 && firstGender.equals("M")) || (secondAge >= 19 && secondGender.equals("M")) ? "1" : "0");
     }
 }
