@@ -11,7 +11,7 @@ public class Main {
 
         for(;i<=100;i++) {
             sum+=i;
-            if(sum>n)
+            if(sum>=n)
                 break;
         }
 
