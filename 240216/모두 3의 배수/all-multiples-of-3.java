@@ -14,9 +14,11 @@ public class Main {
         for(int i=0;i<5;i++) {
             if(a[i]%3==0) {
                 tx=1;
-                if(tx==0)
-                    break;
             }
+            else
+                tx=0;
+            if(tx==0)
+                break;
         }
 
         System.out.print(tx);
