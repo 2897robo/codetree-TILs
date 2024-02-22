@@ -5,7 +5,7 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        char alpha = 'A';
+        int alpha = 'A';
 
         for(int i=0; i<n; i++) {
             for(int j=0; j<i; j++) {
@@ -13,10 +13,11 @@ public class Main {
             }
 
             for(int j=0; j<n-i; j++) {
-                System.out.printf("%s ", alpha++);
-                if(alpha == 'Z')
+                System.out.printf("%s ", (char)alpha++);
+                if(alpha == '[')
                     alpha = 'A';
             }
+
             System.out.println();
         }
     }
