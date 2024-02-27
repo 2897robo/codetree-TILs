@@ -19,10 +19,11 @@ public class Main {
             if(a[i] != ' ') {
                 System.out.print(a[i]);
                 cnt++;
+                if(cnt%5 == 0) {
+                    System.out.println();
+                }
             }
-            if(cnt%5 == 0) {
-                System.out.println();
-            }
+
         }
     }
 }
