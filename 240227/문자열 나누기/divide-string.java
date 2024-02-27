@@ -22,6 +22,7 @@ public class Main {
             }
             if(cnt%5 == 0) {
                 System.out.println();
+                cnt = 0;
             }
         }
     }
