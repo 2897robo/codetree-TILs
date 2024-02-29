@@ -19,6 +19,9 @@ public class Main {
             if(a.equals(b)) {
                 break;
             }
+            else if(cnt > 99) {
+                return -1;
+            }
         }
 
         return cnt;
