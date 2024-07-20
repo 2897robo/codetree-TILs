@@ -5,6 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         String answer = sc.next();
+        sc.nextLine();
         
         String[] tmp = new String[n];
         int cnt = 0;
